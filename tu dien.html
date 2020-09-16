@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Dien ANH-VIET</title>
+</head>
+<body>
+<script>
+    let English = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+    let TiengViet = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười"]
+    var Translate;
+    Translate = prompt(" nhập vào từ cần dịch:")
+    var index;
+    for (var i = 0; i <= English.length; i++) {
+        if (English[i] == Translate) {
+            index = i;
+            break;
+        } else {
+            index = -1;
+        }
+    }
+    if (index == i) {
+        alert(Translate + ":" + TiengViet[index]);
+    } else {
+        alert("không có trong từ điển ! vui lòng nhập lại...");
+    }
+
+
+</script>
+</body>
+</html>
